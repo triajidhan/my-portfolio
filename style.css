@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/kucing.png");
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+}
+
+header video {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 2px rgba(255, 255, 255, 0.893);
+}
+
+h1 {
+    margin: 20px;
+    color: rgb(195, 94, 35);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1#header-end {
+    display: none;
+    margin-bottom: 150px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    animation: typing steps(20);
+}
+
+section {
+    display: none;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 3px rgb(195, 94, 35);
+    border-style: dotted;
+    border-radius: 20px 0 20px 0;
+    width: 70vw;
+    margin-bottom: 250px;
+    padding: 25px;
+    height: 100px;
+}
+
+section.first-content {
+    display: block;
+}
+
+section span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(195, 94, 35);
+}
+
+.btn-container button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 5px;
+    color: aliceblue;
+    border: none;
+    font-weight: 500;
+    width: 60px;
+}
+
+.btn-container button#btn-yes {
+    background-color: rgb(25, 144, 124);
+    box-shadow: 0 0 3px 1px rgb(25, 144, 124);
+}
+
+.btn-container button#btn-no {
+    background-color: rgba(236, 46, 46, 0.999);
+    box-shadow: 0 0 3px 1px rgba(236, 46, 46, 0.999);
+}
