@@ -3,6 +3,8 @@ const headerStart = document.getElementById("header-start");
 const headerEnd = document.getElementById("header-end");
 const btnYes = document.getElementById("btn-yes");
 const btnNo = document.getElementById("btn-no");
+const videoKucing = document.getElementById("video-kucing");
+const audioBirthday = document.getElementById("audio-birthday");
 
 Array.from(contentList).forEach((content, index) => {
     if (index === 8) {
@@ -21,6 +23,13 @@ Array.from(contentList).forEach((content, index) => {
             Array.from(contentList).forEach((el, i) => {
                 if (i === index + 1) {
                     el.style.display = 'block';
+                    if (i === 1) {
+                        videoKucing.play();
+                        videoKucing.loop = true;
+                    } else if (i === 4) {
+                        audioBirthday.play();
+                        audioBirthday.loop = true;
+                    }
                 } else {
                     el.style.display = 'none';
                     if (i === 10 && index === 10) {

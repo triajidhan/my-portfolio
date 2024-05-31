@@ -38,7 +38,99 @@ h1#header-end {
 p {
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
-    animation: typing steps(20);
+    overflow: hidden;
+    border-right: .15em solid rgb(195, 94, 35);
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+p.p-first {
+    animation:
+        typing-first 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+p.p-second {
+    animation:
+        typing-second 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+p.p-third {
+    animation:
+        typing-third 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+p.p-fourth {
+    animation:
+        typing-fourth 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing-first {
+    0% {
+        width: 0
+    }
+
+    25% {
+        width: 100%
+    }
+}
+
+@keyframes typing-second {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 0
+    }
+
+    50% {
+        width: 100%
+    }
+}
+
+@keyframes typing-third {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0
+    }
+
+    75% {
+        width: 100%
+    }
+}
+
+@keyframes typing-fourth {
+    0% {
+        width: 0;
+    }
+
+    75% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(195, 94, 35);
+    }
 }
 
 section {
