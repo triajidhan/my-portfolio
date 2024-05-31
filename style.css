@@ -144,6 +144,7 @@ section {
     margin-bottom: 250px;
     padding: 25px;
     height: 100px;
+    max-width: 310px;
 }
 
 section.first-content {
